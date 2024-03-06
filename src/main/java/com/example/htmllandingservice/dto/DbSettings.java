@@ -1,4 +1,4 @@
-package com.example.htmllandingservice.config;
+package com.example.htmllandingservice.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Getter
 @ConfigurationProperties(prefix = "spring.datasource")
 public class DbSettings {
-    private String url;
-    private String username;
-    private String password;
-    private String driver_class_name;
+    private String dbUrl;
+    private String dbUser;
+    private String dbPassword;
+    private String dbDriverClassName;
 
 }
